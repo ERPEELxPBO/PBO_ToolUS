@@ -26,4 +26,15 @@ public class TempatController {
     }
 
     // tambahkan metode lainnya sesuai kebutuhan
+    @PutMapping("/update/{id}")
+    public Tempat updateTempat(@RequestBody Tempat tempat, @PathVariable(name="id")String id){
+        tempat.setId(id);
+        tempatService.updateTempat(tempat, id);
+        return tempat;
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteTempat(@PathVariable("id") String id) {
+        tempatService.deleteTempat(id);
+    }
 }

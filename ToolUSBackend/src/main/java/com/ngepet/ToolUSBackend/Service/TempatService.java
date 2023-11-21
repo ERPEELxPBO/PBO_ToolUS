@@ -21,5 +21,13 @@ public class TempatService {
         tempatRepo.save(tempat);
     }
 
+    public void updateTempat(Tempat tempat, String id) {
+        tempatRepo.save(tempat);
+    }
+
+    public void deleteTempat(String id) {
+        tempatRepo.deleteById(id);
+    }
+
     // tambahkan metode lainnya sesuai kebutuhan
 }
