@@ -5,13 +5,15 @@ import java.util.Date;
 
 public abstract class Pinjam
 {   @Id
+    private String id_pinjam;
     private String id_produk;
     private String id_admin;
     private String nim;
     private Date tanggal_pinjam;
     private String status;
 
-    public Pinjam(String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status) {
+    public Pinjam(String id_pinjam, String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status) {
+        this.id_pinjam = id_pinjam;
         this.id_produk = id_produk;
         this.id_admin = id_admin;
         this.nim = nim;
@@ -64,5 +66,13 @@ public abstract class Pinjam
 
     // Abstract method
     public abstract void info();
+
+    public String getId_pinjam() {
+        return id_pinjam;
+    }
+
+    public void setId_pinjam(String id_pinjam) {
+        this.id_pinjam = id_pinjam;
+    }
 }
 

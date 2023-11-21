@@ -8,8 +8,8 @@ import java.util.Date;
 public class PinjamBarang extends Pinjam implements KuantitasBarang {
     private int stok;
 
-    public PinjamBarang(String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status, int stok) {
-        super(id_produk, id_admin, nim, tanggal_pinjam, status);
+    public PinjamBarang(String id_pinjam, String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status, int stok) {
+        super(id_pinjam, id_produk, id_admin, nim, tanggal_pinjam, status);
         this.stok = stok;
     }
 

@@ -24,5 +24,15 @@ public class PinjamBarangController {
         pinjamBarangService.addPinjamBarang(pinjamBarang);
     }
 
+    @PutMapping("/replace")
+    public void replacePinjamBarang(@RequestBody PinjamBarang updatedPinjamBarang) {
+        pinjamBarangService.replacePinjamBarang(updatedPinjamBarang);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deletePinjamBarang(@PathVariable Long id) {
+        pinjamBarangService.deletePinjamBarang(id);
+    }
+
     // tambahkan metode lainnya sesuai kebutuhan
 }

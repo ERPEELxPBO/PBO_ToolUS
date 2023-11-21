@@ -25,5 +25,13 @@ public class BarangController {
         barangService.addBarang(barang);
     }
 
-    // tambahkan metode lainnya sesuai kebutuhan
+    @PutMapping("/replace")
+    public void replaceBarang(@RequestBody Barang updatedBarang) {
+        barangService.replaceBarang(updatedBarang);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteBarang(@PathVariable Long id) {
+        barangService.deleteBarang(id);
+    }
 }
