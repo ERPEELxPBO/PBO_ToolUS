@@ -1,6 +1,7 @@
 package com.ngepet.ToolUSBackend.Service;
 
 import com.ngepet.ToolUSBackend.Entity.PinjamTempat;
+import com.ngepet.ToolUSBackend.Entity.Tempat;
 import com.ngepet.ToolUSBackend.Repo.PinjamTempatRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,5 +22,12 @@ public class PinjamTempatService {
         pinjamTempatRepo.save(pinjamTempat);
     }
 
+    public void updatePinjamTempat(PinjamTempat pinjamTempat, String id) {
+        pinjamTempatRepo.save(pinjamTempat);
+    }
+
+    public void deletePinjamTempat(String id) {
+        pinjamTempatRepo.deleteById(id);
+    }
     // tambahkan metode lainnya sesuai kebutuhan
 }
