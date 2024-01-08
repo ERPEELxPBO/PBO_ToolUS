@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping("api/users")
-public class UsersController {
+public class PinjamTempatUsersController {
 
     @Autowired
     private UsersService usersService;
