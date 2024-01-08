@@ -8,8 +8,8 @@ public class PinjamTempat extends Pinjam implements KuantitasTempat {
     private boolean ketersediaan;
 
     // Constructors, getters, setters
-    public PinjamTempat(String id_pinjam, String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status, boolean ketersediaan) {
-        super(id_pinjam, id_produk, id_admin, nim, tanggal_pinjam, status);
+    public PinjamTempat(String id_produk, String id_admin, String nim, Date tanggal_pinjam, String status, boolean ketersediaan) {
+        super(id_produk, id_admin, nim, tanggal_pinjam, status);
         this.ketersediaan = ketersediaan;
     }
 

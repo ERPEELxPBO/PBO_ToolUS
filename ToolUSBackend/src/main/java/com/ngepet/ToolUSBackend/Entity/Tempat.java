@@ -35,6 +35,5 @@ public class Tempat extends Produk implements KuantitasTempat {
     public boolean cekKetersediaan() {
         return ketersediaan;
     }
-
 }
 

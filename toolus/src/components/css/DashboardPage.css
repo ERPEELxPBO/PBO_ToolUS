@@ -1,0 +1,109 @@
+/* DashboardPage.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Menjadikan navbar tetap di atas */
+    width: 100%; /* Lebar navbar mengambil 100% dari lebar layar */
+    top: 0; /* Menetapkan posisi navbar di bagian atas */
+    z-index: 1000; /* Menentukan indeks z untuk mengatasi elemen lain di halaman */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 35px; /* Menambahkan margin kiri */
+  }
+  
+  .menu a:first-child {
+    margin-left: 0; /* Menghapus margin kiri untuk elemen pertama */
+  }
+  
+  .section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .sectionLogin {
+padding: 50px;
+  display: flex; /* Menggunakan flexbox */
+  flex-direction: column; /* Menyusun elemen secara vertikal (kolom) */
+  justify-content: center; /* Memusatkan elemen secara horizontal */
+  align-items: center; /* Memusatkan elemen secara vertikal */
+  border-bottom: 1px solid #ddd;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 
+    250px;
+    height: 60;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    background-color: #fff; /* Menambahkan latar belakang putih untuk membuatnya lebih terlihat */
+    padding: 0 5px; /* Memberikan sedikit padding */
+  }
+  
+  input {
+    width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #4c6c8e;
+  border-radius: 10px;
+  /* margin-top: 20px; Menambahkan margin atas untuk memberikan ruang di atas input */
+  
+}
+  
+  button {
+    background-color: #e23734;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .contact-item {
+    margin-bottom: 10px;
+  }
+  
+  .menu a.active {
+    /* Gaya khusus untuk menu yang sedang aktif */
+    color: #ffcc00; /* Warna teks berbeda untuk menyoroti menu yang aktif */
+    font-weight: bold; /* Teks tebal untuk menyoroti menu yang aktif */
+  }
+
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 8px 12px; /* Tambahkan padding agar tautan lebih mudah di-klik */
+    border-radius: 4px; /* Tambahkan border-radius agar tampil lebih modern */
+  }
+  
+  .menu-item.active {
+    background-color: red; /* Warna latar belakang untuk menu yang aktif */
+  }

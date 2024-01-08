@@ -1,0 +1,127 @@
+/* overview.css */
+
+/* General styles for larger screens */
+.overview .div {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Styles for the "Availability" and "Overview" sections */
+  .overview .overlap,
+  .overview .overlap-group {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0000001a;
+    height: 64px;
+    width: 293px;
+    margin: 20px;
+  }
+  
+  .overview .text-wrapper,
+  .overview .text-wrapper-2 {
+    color: #a7a7a7;
+    font-family: "Lato-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+  }
+  
+  /* Styles for the profile section */
+  .overview .overlap-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 236px;
+    width: 374px;
+  }
+  
+  .overview .rectangle {
+    background: linear-gradient(180deg, rgb(254, 0, 0) 0%, rgb(179, 1, 1) 100%);
+    border-radius: 20px;
+    height: 64px;
+    width: 334px;
+  }
+  
+  .overview .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Lato-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin-left: 15px;
+  }
+  
+  .overview .ellipse {
+    height: 50px;
+    width: 50px;
+    margin-left: 8px;
+  }
+  
+  .overview .img {
+    height: 206px;
+    width: 308px;
+    margin-left: 66px;
+  }
+  
+  .overview .text-wrapper-4,
+  .overview .text-wrapper-5 {
+    color: #a7a7a7;
+    font-family: "Lato-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: normal;
+    position: absolute;
+    top: 104px;
+    white-space: nowrap;
+  }
+  
+  /* Add more specific styles for other sections as needed */
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 1200px) {
+    .overview .div {
+      flex-direction: column; /* Change to column layout on smaller screens */
+      align-items: center;
+    }
+  
+    .overview .overlap,
+    .overview .overlap-group,
+    .overview .overlap-2 {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px;
+    }
+  
+    .overview .text-wrapper,
+    .overview .text-wrapper-2,
+    .overview .text-wrapper-3,
+    .overview .text-wrapper-4,
+    .overview .text-wrapper-5 {
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .overview .rectangle,
+    .overview .ellipse,
+    .overview .img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /* Add more media queries for other screen sizes if necessary */
+  
